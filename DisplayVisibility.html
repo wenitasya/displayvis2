@@ -1,0 +1,44 @@
+<html lang="id">
+  <head>
+    <title>Display & Visibility</title>
+    <style>
+      .kotak-block {
+        display: block;
+        background-color: lightblue;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .kotak-inline {
+        display: inline;
+        background-color: lightgreen;
+        padding: 10px;
+      }
+
+      .kotak-inlineblock {
+        display: inline-block;
+        background-color: orange;
+        padding: 10px;
+        width: 100px;
+      }
+
+      .hidden {
+        visibility: hidden;
+        display: hidden;
+      }
+
+      .none {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="kotak-block">Saya block</span>
+    <span class="kotak-inline">Saya inline</span>
+    <h2 class="none">Masih belum melihatku?</h2>
+    <span class="kotak-inline">Saya inline</span>
+    <span class="hidden">Apa kamu melihatku?</span>
+    <span class="kotak-inline">Saya inline</span>
+    <div class="kotak-inlineblock">Saya inline-block</div>
+  </body>
+</html>

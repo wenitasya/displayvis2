@@ -1,0 +1,39 @@
+<html lang="id">
+  <head>
+    <style>
+      .container {
+        height: 200px;
+        background-color: #f1f1f1;
+      }
+
+      .box1,
+      .box2 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 25px;
+      }
+
+      /* Kotak 1 berada di belakang karena z-index lebih kecil (1) */
+      .box1 {
+        left: 50px;
+        background-color: lightblue;
+        z-index: 11;
+      }
+
+      /* Kotak 2 menutupi Kotak 1 karena z-index lebih besar (10) */
+      .box2 {
+        left: 100px;
+        background-color: tomato;
+        z-index: 10;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box1">Kotak 1 (z-index: 1)</div>
+      <div class="box2">Kotak 2 (z-index: 10)</div>
+    </div>
+  </body>
+</html>

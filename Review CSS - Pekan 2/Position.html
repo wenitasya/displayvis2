@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Position CSS</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      .kotak {
+        width: 150px;
+        height: 80px;
+        padding: 10px;
+        margin: 20px 0;
+        background-color: lightblue;
+        border-radius: 10px;
+      }
+
+      /* 1. Static */
+      .static {
+        position: static;
+      }
+
+      /* 2. Relative */
+      .relative {
+        position: relative;
+        left: 30px;
+      }
+
+      /* 3. Absolute */
+      .container {
+        position: relative;
+        height: 150px;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: lightgreen;
+      }
+
+      /* 4. Fixed */
+      .fixed {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: tomato;
+      }
+
+      /* 5. Sticky */
+      .sticky {
+        position: sticky;
+        top: 0;
+        background-color: gold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Contoh Position CSS</h1>
+
+    <div class="kotak static">Static</div>
+
+    <div class="kotak relative">Relative</div>
+
+    <div class="container">
+      <div class="kotak absolute">Absolute</div>
+    </div>
+
+    <div class="kotak sticky">Sticky</div>
+
+    <div class="kotak fixed">Fixed</div>
+
+    <p>Scroll halaman untuk melihat perbedaan position.</p>
+
+    <div style="height: 1000px"></div>
+  </body>
+</html>

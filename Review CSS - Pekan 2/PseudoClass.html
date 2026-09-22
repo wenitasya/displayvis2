@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-Class CSS</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* :hover */
+      .tombol:hover {
+        background-color: blue;
+        color: white;
+      }
+
+      /* :active */
+      .tombol:active {
+        background-color: red;
+      }
+
+      /* :focus */
+      .input:focus {
+        border: 2px solid green;
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Contoh Pseudo-Class</h1>
+
+    <h2>:hover dan :active</h2>
+    <button class="tombol">Arahkan dan Klik</button>
+
+    <h2>:focus</h2>
+    <input type="text" class="input" placeholder="Klik dan ketik di sini" />
+  </body>
+</html>
